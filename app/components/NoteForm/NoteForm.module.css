@@ -4,7 +4,6 @@
   gap: 16px;
 }
 
-/* Група поля */
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -13,37 +12,26 @@
   color: #212529;
 }
 
-/* Універсальний стиль для input/textarea/select */
 .input,
 .textarea,
 .select {
-  margin-top: 6px;
+  margin-top: 4px;
   padding: 8px 12px;
   font-size: 14px;
   border: 1px solid #ced4da;
   border-radius: 4px;
-  background-color: #fff;
-  outline: none;
-  transition: border-color 0.2s ease;
+  resize: none;
 }
 
-.input:focus,
-.textarea:focus,
-.select:focus {
-  border-color: #0d6efd;
-}
-
-/* Контейнер кнопок */
 .actions {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
 }
 
-/* Кнопка Create */
 .submitButton {
   padding: 8px 16px;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #0d6efd;
   color: #fff;
   border: none;
@@ -61,10 +49,9 @@
   cursor: not-allowed;
 }
 
-/* Кнопка Cancel */
 .cancelButton {
   padding: 8px 16px;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #f8f9fa;
   color: #212529;
   border: 1px solid #ced4da;
@@ -77,7 +64,6 @@
   background-color: #e2e6ea;
 }
 
-/* Текст помилки */
 .error {
   color: #dc3545;
   font-size: 12px;
