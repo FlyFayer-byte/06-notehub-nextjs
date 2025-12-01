@@ -1,0 +1,47 @@
+/* Контейнер пагінації */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Кнопки сторінок */
+.pagination li {
+  min-width: 36px;
+  height: 36px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Контент усередині кнопок */
+.pagination li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+/* Hover ефект */
+.pagination li:hover {
+  background-color: #e9ecef;
+}
+
+/* Виділена сторінка */
+.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.active a {
+  color: #fff !important;
+  font-weight: 500;
+}

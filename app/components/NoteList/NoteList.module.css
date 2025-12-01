@@ -1,0 +1,72 @@
+/* Сітка списку */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* Карточка нотатки */
+.listItem {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease;
+}
+
+.listItem:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Заголовок */
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Текст */
+.content {
+  font-size: 14px;
+  color: #495057;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+/* Тег */
+.tag {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Нижній блок */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Кнопка Delete */
+.button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #b02a37;
+}
